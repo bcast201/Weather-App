@@ -52,7 +52,7 @@ function App() {
         setTemp(newTemp)
 
         //Get Icon
-        setIcon(`http://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`)
+        setIcon(`https://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`)
 
         //Get High and Low Temp and remove decimal
 
@@ -107,7 +107,7 @@ function App() {
 
         //Get Forecast
 
-        axios.get('http://api.openweathermap.org/data/2.5/forecast?q=New%20York&appid=17f660a7751acde6c5d52f1b5d810eaf&units=imperial')
+        axios.get('https://api.openweathermap.org/data/2.5/forecast?q=New%20York&appid=17f660a7751acde6c5d52f1b5d810eaf&units=imperial')
           .then(res => {
             console.log(res)
             
@@ -133,9 +133,9 @@ function App() {
 
             //Get Future Icons
 
-            let futureIconLinkOne = `http://openweathermap.org/img/wn/${res.data.list[0].weather[0].icon}@2x.png`
-            let futureIconLinkTwo = `http://openweathermap.org/img/wn/${res.data.list[1].weather[0].icon}@2x.png`
-            let futureIconLinkThree = `http://openweathermap.org/img/wn/${res.data.list[2].weather[0].icon}@2x.png`
+            let futureIconLinkOne = `https://openweathermap.org/img/wn/${res.data.list[0].weather[0].icon}@2x.png`
+            let futureIconLinkTwo = `https://openweathermap.org/img/wn/${res.data.list[1].weather[0].icon}@2x.png`
+            let futureIconLinkThree = `https://openweathermap.org/img/wn/${res.data.list[2].weather[0].icon}@2x.png`
 
           
             console.log(res.data.list[0].weather[0].icon + 'link')
@@ -186,7 +186,7 @@ function App() {
         
 
         //Get Icon
-        setIcon(`http://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`)
+        setIcon(`https://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`)
 
         //Get High and Low Temp and remove decimal
 
@@ -239,7 +239,7 @@ function App() {
 
         setHumidity(res.data.main.humidity)
 
-        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${adjustedCity}&${state}&appid=17f660a7751acde6c5d52f1b5d810eaf&units=imperial`)
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${adjustedCity}&${state}&appid=17f660a7751acde6c5d52f1b5d810eaf&units=imperial`)
           .then(res => {
             console.log(res)
             
@@ -265,9 +265,9 @@ function App() {
 
             //Get Future Icons
 
-            let futureIconLinkOne = `http://openweathermap.org/img/wn/${res.data.list[0].weather[0].icon}@2x.png`
-            let futureIconLinkTwo = `http://openweathermap.org/img/wn/${res.data.list[1].weather[0].icon}@2x.png`
-            let futureIconLinkThree = `http://openweathermap.org/img/wn/${res.data.list[2].weather[0].icon}@2x.png`
+            let futureIconLinkOne = `https://openweathermap.org/img/wn/${res.data.list[0].weather[0].icon}@2x.png`
+            let futureIconLinkTwo = `https://openweathermap.org/img/wn/${res.data.list[1].weather[0].icon}@2x.png`
+            let futureIconLinkThree = `https://openweathermap.org/img/wn/${res.data.list[2].weather[0].icon}@2x.png`
 
           
             console.log(res.data.list[0].weather[0].icon + 'link')
