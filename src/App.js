@@ -109,7 +109,7 @@ function App() {
 
         axios.get('https://api.openweathermap.org/data/2.5/forecast?q=New%20York&appid=17f660a7751acde6c5d52f1b5d810eaf&units=imperial')
           .then(res => {
-            console.log(res)
+          
             
             //Get Future times
 
@@ -138,7 +138,7 @@ function App() {
             let futureIconLinkThree = `https://openweathermap.org/img/wn/${res.data.list[2].weather[0].icon}@2x.png`
 
           
-            console.log(res.data.list[0].weather[0].icon + 'link')
+           
 
             setFutureIconOne(futureIconLinkOne)
             setFutureIconTwo(futureIconLinkTwo)
@@ -241,7 +241,7 @@ function App() {
 
         axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${adjustedCity}&${state}&appid=17f660a7751acde6c5d52f1b5d810eaf&units=imperial`)
           .then(res => {
-            console.log(res)
+            
             
             //Get Future times
 
@@ -270,7 +270,7 @@ function App() {
             let futureIconLinkThree = `https://openweathermap.org/img/wn/${res.data.list[2].weather[0].icon}@2x.png`
 
           
-            console.log(res.data.list[0].weather[0].icon + 'link')
+            
 
             setFutureIconOne(futureIconLinkOne)
             setFutureIconTwo(futureIconLinkTwo)
