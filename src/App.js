@@ -392,7 +392,7 @@ const Container = styled.div`
 const Main = styled.div`
     width: 40%;
     margin: auto;
-    height: 100%;
+    height: 100vh;
     display: flex;
     background-color: rgba(255, 255, 255, 0.4);
     flex-direction: column;
@@ -405,7 +405,6 @@ const Main = styled.div`
 
     @media only screen and (max-width: 700px){
         width: 100vw;
-        height: 100% !important;
     }
 `
 
