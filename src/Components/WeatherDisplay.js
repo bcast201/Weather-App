@@ -45,11 +45,11 @@ const Container = styled.div`
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 70%;
+    height: 70%;
 
     @media only screen and (max-width: 600px){
         font-size: 1rem;
         width: 90vw;
-        max-height: 60%
+        height: 60%
     }
 `

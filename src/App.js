@@ -387,7 +387,7 @@ const Container = styled.div`
  
   background: linear-gradient(45deg, ${props => props.backgroundColor}, white);
   color: black;
-  height: 100vh;
+  max-height: 100vh;
 `
 const Main = styled.div`
     width: 40%;
