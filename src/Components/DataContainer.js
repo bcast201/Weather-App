@@ -8,7 +8,7 @@ export const DataContainer = ({highTemp, lowTemp, windSpeed, humidity}) => {
                 <High>
                     High: {highTemp}
                 </High>
-                <hr style={{width: '40px'}}/>
+                <hr style={{width: '40px', borderColor: "black", borderWidth: 'thin'}}/>
                 <Low>
                     Low: {lowTemp}
                 </Low>
@@ -37,7 +37,7 @@ const Container = styled.div`
     display: flex;
     width: 90%;
     margin: auto;
-    height: 15vh;
+    height: 20%;
     align-items: center;
     justify-content: center;
     font-weight: 400;

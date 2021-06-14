@@ -387,13 +387,13 @@ const Container = styled.div`
  
   background: linear-gradient(45deg, ${props => props.backgroundColor}, white);
   color: black;
-  min-height: 100vh;
+  height: 100vh;
 `
 const Main = styled.div`
-    padding-top: 3rem;
     width: 40%;
     margin: auto;
-    height: 100vh;
+    height: 100%;
+    max-height: 100%;
     display: flex;
     background-color: rgba(255, 255, 255, 0.4);
     flex-direction: column;
@@ -412,15 +412,18 @@ const Main = styled.div`
 const Form = styled.form`
   display: flex;
   width: 70%;
-  margin: auto;
-  margin-top: -1rem;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-bottom: 0;
+  margin-top: -3rem;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
 
-  @media only screen and (max-width:600){
-    margin-top: -2rem;
+  @media only screen and (max-width:600px){
+    height: 40%;
   }
 
 `

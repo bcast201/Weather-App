@@ -33,6 +33,9 @@ const Text = styled.p`
     height: 5%;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 600px){
+        font-size: 1rem;
+    }
 `
 
 const CityName = styled.h1`
@@ -41,5 +44,9 @@ const CityName = styled.h1`
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 3rem
+    font-size: 3rem;
+
+    @media only screen and (max-width: 600px){
+        font-size: 1.5rem;
+    }
 `

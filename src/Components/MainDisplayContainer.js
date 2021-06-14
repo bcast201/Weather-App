@@ -20,7 +20,8 @@ export const MainDisplayContainer = ({temp, icon, feelsLike, feelsColor}) => {
 const Container = styled.div`
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: 40%;
+
 `
 
 const DisplayIcon = styled.div`
@@ -31,9 +32,6 @@ const DisplayIcon = styled.div`
     align-items: center;
     font-weight: 400;
 
-    /* &span{
-        color: blue;
-    } */
 `
 
 const DisplayTemp = styled.div`
@@ -46,9 +44,7 @@ const DisplayTemp = styled.div`
         font-size: 2rem;
         vertical-align: top;
 
-        @media only screen and (max-width: 600px){
-        font-size: 1rem;
-        }
+        
 
     }
 `
@@ -69,7 +65,7 @@ const Temp = styled.h1`
         font-size: 8rem;
     }
     @media only screen and (max-width: 600px){
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
 

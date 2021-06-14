@@ -45,16 +45,22 @@ export const ForecastContainer = ({timeOne, timeTwo, timeThree, futureTempOne, f
 
 const Container = styled.div`
     display: flex;
-    height: 20%;
+    max-height: 20%;
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5rem;
+
+    @media only screen and (max-width:600px){
+        height: 100px;
+
+    }
 `
 
 const ForecastOne = styled.div`
     display: flex;
     width: 100%;
-    min-height: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -62,7 +68,7 @@ const ForecastOne = styled.div`
 const ForecastTwo = styled.div`
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -70,7 +76,7 @@ const ForecastTwo = styled.div`
 const ForecastThree = styled.div`
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -78,17 +84,18 @@ const ForecastThree = styled.div`
 
 const Time = styled.p`
     display: flex;
-    padding-top: 40px;
+    margin: 0;
     `
 
 const Icon = styled.div`
     display: flex;
     & img{
-        max-height: 50px;
+        height: 4rem;
     }
 `
 
 const Temp = styled.p`
     display: flex;
+    margin: 0;
 
 `
